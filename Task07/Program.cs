@@ -6,7 +6,7 @@
 Console.Write("Введите трехзначное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num >= 100 && num <=999);
+if (num >= 100 && num <=999)
 {
     int numLast = num % 10;
     Console.WriteLine(numLast);

@@ -5,5 +5,13 @@
 
 Console.Write("Введите трехзначное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int numLast = num % 10;
-Console.WriteLine(numLast);
+
+if (num >= 100 && num <=999);
+{
+    int numLast = num % 10;
+    Console.WriteLine(numLast);
+}
+else
+{
+    Console.WriteLine("Введите трехзначное число");
+}

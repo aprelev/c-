@@ -1,4 +1,4 @@
-﻿//Напишите программу которая на выводит сдучайное трехзначное число и удаляет вторую цифру этого числа.
+﻿//Напишите программу, которая на выводит сдучайное трехзначное число и удаляет вторую цифру этого числа.
 //456 -> 46
 //782 -> 72
 //918 -> 98
@@ -13,6 +13,6 @@ return result;
 
 
 int number = new Random().Next(100,1000);
-int rsd = RemoveSecondDigit(number);
+int removeSecondDigit = RemoveSecondDigit(number);
 Console.WriteLine($"Случайное число из отрезка 100 - 999 -> {number}");
-Console.WriteLine($"После удаления второй цифры, получаем число: {rsd}");
+Console.WriteLine($"После удаления второй цифры, получаем число: {removeSecondDigit}");

@@ -5,3 +5,25 @@
 32679 -> 6
 */
 
+int ThirdNumber(int number)
+{
+    int result = -1;
+    if (number >= 100)
+    {
+        while (number > 999)
+        {
+            number = number / 10;
+        }
+        result = number % 10;
+    }
+    return result;
+}
+Console.WriteLine("Введите любое число от 1 до бесконечности");
+int number = Convert.ToInt32(Console.ReadLine());
+if(number < 0) number = -number;
+if (ThirdNumber(number)== -1)
+Console.WriteLine("Нет третьей цифры");
+else
+{
+    Console.WriteLine($"Третья цифра данного числа {ThirdNumber(number)}");
+}

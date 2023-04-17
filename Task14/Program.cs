@@ -8,3 +8,11 @@
 
 Console.WriteLine("Введите число");
 int number1 = Convert.ToInt32(Console.ReadLine());
+
+bool result = MultNumbers(number1, 7, 23);
+Console.WriteLine(result ? "Да" : "Нет");
+
+bool MultNumbers(int num, int num1, int num2)
+{
+    return num % num1 == 0 && num % num2 == 0;
+}

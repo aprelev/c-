@@ -8,8 +8,12 @@
 
 Console.WriteLine("Введите число");
 int number1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите первое число на кратность");
+int number2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число на кратность");
+int number3 = Convert.ToInt32(Console.ReadLine());
 
-bool result = MultNumbers(number1, 7, 23);
+bool result = MultNumbers(number1, number2, number3);
 Console.WriteLine(result ? "Да" : "Нет");
 
 bool MultNumbers(int num, int num1, int num2)
